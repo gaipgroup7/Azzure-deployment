@@ -14,8 +14,8 @@ import random
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
-MODEL_PATH = 'models/PolypCModel4.h5'
-MODEL_PATH2 = 'models/bestyet.h5'
+MODEL_PATH = 'PolypCModel4.h5'
+MODEL_PATH2 = 'bestyet.h5'
 
 def dice_coef(y_true, y_pred):
     y_true_f = tf.keras.layers.Flatten()(y_true)
